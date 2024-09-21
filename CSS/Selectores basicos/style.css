@@ -1,0 +1,51 @@
+.greetring {
+  color: coral;
+  width: 30px;
+  font-size: 50px;
+}
+.other {
+  color: maroon;
+  width: 40px;
+  font-size: 25px;
+}
+h2 {
+  color: blueviolet;
+  width: 20px;
+  font-size: 25px;
+}
+#hello {
+  color: green;
+  width: 30px;
+  font-size: 25px;
+}
+.divider {
+  background-color: red;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: white;
+}
+.yellow,
+.green {
+  color: aqua;
+}
+footer p {
+  color: orange;
+}
+.container > h2 {
+  color: lawngreen;
+}
+div > h2 {
+  color: blue;
+}
+li:first-child {
+  color: indianred;
+}
+li:last-child {
+  color: brown;
+}
+a[href='hola.com'] {
+  color: yellow;
+}

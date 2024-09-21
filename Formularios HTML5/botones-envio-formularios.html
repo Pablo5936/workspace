@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Botones de envío de formularios.</h1>
+    <input type="submit" value="TextoBotón" />
+    <h2>Imagen como botón de enviar</h2>
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Datos del formulario -->
+      Usuario: <input type="text" name="usuario" />
+      <!-- Botón de envío de formulario con imagen -->
+      <input
+        type="image"
+        src="enviar.png"
+        alt="Enviar"
+        width="80"
+        height="28"
+      />
+    </form>
+    <h2>botón reset</h2>
+    <input type="reset" value="TextoBotón" />
+    <h2>botón personalizado</h2>
+    <button type="submit">Enviar</button>
+    <button name="nombre" type="TipoBoton" value="ValorBoton">Botón</button>
+  </body>
+</html>

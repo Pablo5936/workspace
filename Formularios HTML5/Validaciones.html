@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ATRIBUTOS MAS USADOS</h1>
+    <h2>Atributo required</h2>
+    <form>
+      method="post" action="/nombre">
+      <label for="name">Nombre:</label>
+      <input type="text" name="name" placeholder="Su nombre" required />
+      <button type="submit">Enviar</button>
+    </form>
+    <h2>minlength y maxlength</h2>
+    <form>
+      method="post" action="/user">
+      <label for="nick">nickName:</label>
+      <input type="text" name="nick" placeholder="Su nick" minlength="2"
+      maxlength="8" input:valid { background: lightgreen; } input:invalid {
+      background: coral; } />
+      <button type="submit">Enviar</button>
+    </form>
+    <h2>min y max para los inputs de type number</h2>
+    <form method="post" action="/user">
+      <label for="age">Edad:</label>
+      <input type="number" name="age" placeholder="Su edad" min="14" max="99" />
+      <button type="submit">Enviar</button>
+    </form>
+    <h2>Atributo multiple</h2>
+    <form>
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple />
+    </form>
+    <h2>Atributo readonly</h2>
+    <form>
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value="Alberto"
+        readonly
+      /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Trevijano" />
+    </form>
+    <h2>Customizar el formulario</h2>
+    input:valid { background: lightgreen; } input:invalid { background: coral; }
+    <h3>Dar estilo haciendo uso de las etiquetas html</h3>
+    input[type="text"] { margin-bottom: 20px; }
+    <h2>Validación por patron</h2>
+    <form name="formulario" method="post" action="send.php">
+      <!-- Nombre de usuario.
+           Campo obligatorio, entre 5-40 carácteres
+           Sólo se permiten letras y números -->
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre de usuario"
+        minlength="5"
+        maxlength="40"
+        required
+        pattern="[A-Za-z0-9]+"
+      />
+    </form>
+    <!--Nótese que de no incluir los atributos minlength y maxlength el usuario no tendría limitación en cuanto al tamaño del nombre de usuario. Esto también puede incorporarse en la propia expresión regular, y prescindir de dichos atributos:-->
+    <form name="formulario" method="post" action="send.php">
+      <!-- Nombre de usuario.
+           Campo obligatorio, entre 5-40 carácteres
+           Sólo se permiten letras y números -->
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre de usuario"
+        required
+        pattern="[A-Za-z0-9]{5,40}"
+        title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40"
+      />
+    </form>
+    <form method="post" action="/register">
+      <label for="nombre">Usuario:</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Name"
+        minlength="5"
+        maxlength="40"
+        required
+        pattern="[A-Za-z0-9]+"
+      />
+      <button type="submit">Registrarse</button>
+    </form>
+    <form method="post" action="/coche">
+      <label for="coche">Coche:</label>
+      <input
+        type="text"
+        name="coche"
+        placeholder="Su modelo de coche"
+        required
+        pattern="A|a(1|3|4|6)"
+        title="Modelos posibles: A1, A3, A4 y A6"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

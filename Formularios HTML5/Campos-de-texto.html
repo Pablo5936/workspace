@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="email" /> el teclado mostrará botones especiales como .com y @
+    <input type="hidden" />info que queremos enviar con el formulario pero que
+    no se vea en la pantalla <input type="password" /> no aparecerán los
+    caracteres visibles al escribir. <input type="search" /> para búsquedas
+    <input type="tel" /> tipo teléfono, desplegará teclado numérico
+    <input type="text" /> (por defecto)
+    <input type="url" />
+    <form>
+      <label for="fname">Nombre:</label>
+      <input
+        type="text"
+        id="identificador"
+        size="tamaño"
+        name="nombre"
+        value="texto por defecto"
+      />
+    </form>
+    <form>
+      <label for="fname">email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        size="70"
+        value="usuario@dominio.com"
+      />
+    </form>
+    <h2>Inputs tipo password</h2>
+    <input type="password" id="identificador" size="tamaño" name="nombre" />
+    <input type="password" id="clave" name="clave" size="20" />
+    <h2>Etiqueta textarea</h2>
+    <label for="comments">Comentarios:</label>
+    <textarea id="comments">Este será el contenido de los comentarios</textarea>
+    <h2>Atributo minlength y maxlength</h2>
+    <form method="post" action="/user">
+      <label for="nick">nickName:</label>
+      <input
+        type="text"
+        name="nick"
+        placeholder="Su nick"
+        minlength="2"
+        maxlength="8"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

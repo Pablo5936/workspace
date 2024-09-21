@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./ejemplo-tablacss.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Peugeout</td>
+          <td>406</td>
+          <td>Rojo</td>
+        </tr>
+        <tr>
+          <td>Ford</td>
+          <td>Mustang</td>
+          <td>Negro</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <td>Coca cola</td>
+        <td>3€</td>
+      </tr>
+      <tr>
+        <td>Agua</td>
+        <td>1.5€</td>
+      </tr>
+
+      <tr>
+        <!-- 
+            Tendremos la columna del total que ocupará el espacio de 2 columnas.
+           -->
+        <td colspan="2">Sum: 4.5€</td>
+      </tr>
+    </table>
+    <table>
+      <colgroup>
+        <col span="2" style="background: red" />
+        <col style="background: blue" />
+      </colgroup>
+      <tr>
+        <th>Alumno</th>
+        <th>Curso</th>
+        <th>Edad</th>
+      </tr>
+      <tr>
+        <td>Alberto Rivera</td>
+        <td>Fullstack</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>Ganfalf el gris</td>
+        <td>Master en Istar</td>
+        <td>indeterminado</td>
+      </tr>
+    </table>
+  </body>
+</html>

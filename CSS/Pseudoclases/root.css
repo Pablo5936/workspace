@@ -1,0 +1,8 @@
+:root {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  --primary: crimson;
+  --secondary: red;
+  --background: grey;
+  --border-radius: 1.2rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>Etiqueta summary</h2>
+      <details>
+        <summary>Más información</summary>
+        <h2>Nombre</h2>
+        <img src="foto.jpg" alt="Foto" />
+      </details>
+    </div>
+    <div>
+      <h2>Etiqueta dialog</h2>
+      <dialog id="alert">
+        <p>¡Hola!</p>
+        <button id="close" onclick="document.getElementById('alert').close()">
+          Ok!
+        </button>
+      </dialog>
+      <button id="show" onclick="document.getElementById('alert').show()">
+        Mostrar
+      </button>
+    </div>
+    <div>
+      <h2>Modal</h2>
+      <dialog id="gandalfModal">
+        <img src="gandalf.jpg" alt="Gandalf" />
+        <p>¡NO.. PUEDES... PASAR!</p>
+        <button
+          id="close"
+          onclick="document.getElementById('gandalfModal').close()"
+        >
+          Ok!
+        </button>
+      </dialog>
+      <button
+        id="show"
+        onclick="document.getElementById('gandalfModal').showModal()"
+      >
+        Mostrar
+      </button>
+    </div>
+    <div>
+      <h2 contenteditable>Atributo:cont editable</h2>
+      <h3 contenteditable>Título</h3>
+      <div contenteditable>
+        <p>Este es un párrafo modificable de ejemplo</p>
+      </div>
+    </div>
+    <div>
+      <!--Ejemplo de javascript en línea-->
+      <script>
+        alert('¡Hola!')
+      </script>
+    </div>
+    <div>
+      <!--Javascript externo-->
+      <script src="/script.js"></script>
+    </div>
+    <div>
+      <!--Modúlos, funcionalidades mediante import y export.
+      atributo type="module"-->
+      <script type="module">
+        import { pi } from './pi-module.js'
+      </script>
+    </div>
+    <div>
+      <script type="module">
+        /* Código para navegadores modernos */
+        import { pi } from './pi-module.js'
+      </script>
+      <script nomodule>
+        /* Código para navegadores antiguos */
+      </script>
+    </div>
+    <h2>Etiqueta template</h2>
+    <table id="tabla">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Calificación</th>
+      </tr>
+      <template id="usuario">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </template>
+    </table>
+  </body>
+</html>

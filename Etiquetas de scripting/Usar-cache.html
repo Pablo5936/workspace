@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi página web</title>
+    <meta http-equiv="Cache-Control" content="max-age=604800" />
+  </head>
+  <body>
+    <h1>Bienvenido a mi página web</h1>
+    <div>
+      // archivo script.js console.log("Hola, mundo!"); // se agrega la cabecera
+      Cache-Control al inicio del archivo // En este ejemplo, se establece que
+      el archivo sea almacenado en la caché por un día (86400 segundos) // Si en
+      algún momento se actualiza el archivo, se debe cambiar el valor de "v=1" a
+      "v=2" y así sucesivamente // para que el navegador descargue la nueva
+      versión // Ejemplo:
+      <script src="script.js?v=2"></script>
+      // Esto es útil para evitar que los usuarios tengan que borrar la caché
+      manualmente para ver los cambios // En producción, se debe establecer un
+      valor más alto para la caché para mejorar el rendimiento del sitio // y
+      ahorrar ancho de banda // Ejemplo: max-age=31536000 para un año // Es
+      importante tener en cuenta que no todos los navegadores respetan la caché
+      // y algunos usuarios pueden tenerla desactivada
+    </div>
+  </body>
+</html>

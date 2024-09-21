@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Eventos javascript</h1>
+    <div>
+      <img
+        src="gandalf.jpg"
+        alt="Gandalf"
+        onClick="alert('¡Has hecho clic!')"
+      />
+    </div>
+    <h2>Evenos de documento</h2>
+    <img
+      style="width: 300px"
+      src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/
+			2022/10/18/16661071524623.jpg"
+      id="gandalfImage"
+      alt="Gandalf"
+    />
+    <p id="textId"></p>
+
+    <script>
+      document
+        .getElementById('gandalfImage')
+        .addEventListener('load', loadImage)
+      function loadImage() {
+        document.getElementById('textId').innerHTML = 'Image loaded'
+      }
+    </script>
+    <h2>onScroll</h2>
+    <textarea style="width:100% height: 100px" id="scrollExample">
+      HTML stands for Hyper Text Markup Language.
+    It is used to design web pages using markup language.
+    HTML is the combination of Hypertext and Markup language.
+    Hypertext defines the link between the web pages.
+    Markup language is used to define the text document
+    within tag which defines the structure of web pages.
+    HTML is a markup language which is used by the browser
+    to manipulate text, images and other content to
+    display it in required format.
+  </textarea
+    >
+
+    <p id="example"></p>
+
+    <script>
+      document
+        .getElementById('scrollExample')
+        .addEventListener('scroll', onScrollAction)
+
+      function onScrollAction() {
+        document.getElementById('example').innerHTML =
+          'Has hecho scroll en el textArea.'
+      }
+    </script>
+    <h2>Eventos de foco</h2>
+    <h2>onblur event example</h2>
+    <input onblur="myFunction()" />
+
+    <script>
+      function myFunction() {
+        alert('foco perdido!')
+      }
+    </script>
+    <h2>onFocus event example</h2>
+    <input onfocus="myFunction()" />
+
+    <script>
+      function myFunction() {
+        alert('Estoy en foco!')
+      }
+    </script>
+    <h2>Eventos de Ratón</h2>
+    <!-- EJEMPLO DE ONCLICK QUE CUANDO HAGAMOS CLICK EN EL <p> 
+
+EL TEXTO SE CAMBIARÁ A ROJO -->
+
+    <p id="example" onclick="myFunction()">
+      Haz click para cambiarme de color.
+    </p>
+
+    <script>
+      function myFunction() {
+        document.getElementById('example').style.color = 'red'
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Listas de selección</h1>
+    <h2>Etiqueta "select"</h2>
+    <label for="avengers">Elige una opción:</label>
+
+    <select name="avengers" id="avengers">
+      <option value="thor">Thor</option>
+      <option value="hulk">Hulk</option>
+      <option value="ironman">Ironman</option>
+    </select>
+    <h2>Etiqueta optgroup</h2>
+    <optgroup label="etiqueta"></optgroup>
+    <select name="ciudad">
+      <optgroup label="Europa">
+        <option>Madrid</option>
+        <option>Londres</option>
+        <option>Paris</option>
+      </optgroup>
+      <optgroup label="Suramerica">
+        <option>Santiago</option>
+        <option>Sao Paulo</option>
+        <option>Lima</option>
+        <option>Bogota</option>
+      </optgroup>
+      <optgroup label="Africa">
+        <option>Casablanca</option>
+        <option>Ciudad del Cabo</option>
+      </optgroup>
+    </select>
+    <h2>Etiqueta datalist</h2>
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Campo de texto combinado con lista de opciones -->
+      <input type="text" list="items" />
+      <!-- Lista de opciones -->
+      <datalist id="items">
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+      </datalist>
+    </form>
+    <h2>seleccion de color</h2>
+    <form name="formulario" method="post" action="http://mipagina/send.php">
+      <!-- Selección de color -->
+      Selecciona el color deseado:
+      <input type="color" name="color" value="#FF0000" />
+    </form>
+    <h2>input file</h2>
+    <input type="file" id="identificador" value="valor" name="nombre" />
+    <h2>Atributo mùltiple</h2>
+    <form>
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple />
+    </form>
+  </body>
+</html>

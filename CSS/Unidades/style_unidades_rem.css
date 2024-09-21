@@ -1,0 +1,14 @@
+/* :root {
+  font-size: 10px; /* Tamaño base
+}
+
+h1 {
+  font-size: 2rem; /* El doble del tamaño base: 20px */
+/* } */
+html {
+  font-size: 16px;
+}
+
+.rems li {
+  font-size: 1.3rem;
+}
